@@ -1,0 +1,47 @@
+.image-blocks {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    gap: 15px;
+  }
+  
+  .block {
+    width: 22%;
+    text-decoration: none;
+    color: inherit;
+    font-family: sans-serif;
+  }
+  
+  .block img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .block h4 {
+    font-size: 16px;
+    margin: 8px 0 4px 0;
+  }
+  
+  .block p {
+    font-size: 13px;
+    color: #666;
+  }
+  
+  .today-un {
+    background-color: #007bc7;
+    color: white;
+    padding: 30px 15px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .highlight {
+    color: #007bc7;
+    font-weight: bold;
+  }
+  
