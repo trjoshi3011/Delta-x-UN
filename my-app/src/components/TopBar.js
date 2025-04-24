@@ -7,10 +7,10 @@ function TopBar() {
     <div>
       <div className="top-bar">
         <div className="top-bar-inner">
-          <div className="left">
+          <a href="https://www.un.org/en/" className="left" target="_blank" rel="noopener noreferrer">
             <AiFillHome className="home-icon" />
             <span>Welcome to the United Nations</span>
-          </div>
+          </a>
           <div className="right">
             <button className="lang">العربية</button>
             <button className="lang">中文</button>
