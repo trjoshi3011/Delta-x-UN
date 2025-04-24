@@ -1,7 +1,7 @@
 import React from 'react';
 import './UNLogoNav.css';
 import logo from '../assets/un-logo.png';
-import { Search } from 'lucide-react'; // Make sure `lucide-react` is installed
+import { Search } from 'lucide-react';
 
 function UNLogoNav() {
   return (

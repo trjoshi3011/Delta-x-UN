@@ -1,18 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700;750;800&display=swap');
+
+
 .un-logo-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 10mm;
-  padding: 1rem 0;
-  background-color: white;
-}
-
-.logo-left {.un-logo-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 10mm;
-  padding: 1rem 0;
+  padding: 1.2rem 0;
   background-color: white;
 }
 
@@ -22,89 +16,51 @@
 }
 
 .un-logo {
-  height: 3.5rem;
-  margin-right: 1rem;
+  height: 5rem; /* Set this as your fixed logo height */
+  margin-right: 1.2rem;
 }
 
 .logo-text {
   display: flex;
   align-items: center;
+  height: 5rem; /* Match logo height */
 }
 
 .un-title {
-  font-weight: bold;
-  font-size: 1.8rem;
-  line-height: 1.2;
-  margin-right: 1rem;
-  color: black;
+  font-family: 'Inter', sans-serif;
+  font-weight: 750;           /* Medium weight */
+  font-size: 2.6rem;          /* Tall text */
+  line-height: 0.95;          /* Tighter spacing between lines */
   display: flex;
   flex-direction: column;
-}
-
-.bold-line {
+  justify-content: space-between;
+  color: black;
+  height: 100%;
   margin: 0;
 }
 
+.bold-line {
+  padding: 0;
+  margin: 0;
+}
+
+
 .divider {
   width: 1px;
-  height: 3.5rem; /* match logo height */
+  height: 5rem; /* match enlarged logo */
   background-color: black;
   margin: 0 1.2rem;
 }
 
 .subtitle {
-  font-size: 1rem;
+  font-size: 1.3rem; /* Larger subtitle */
   color: #4d4d4d;
   font-weight: bold;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .search-icon {
-  cursor: pointer;
-  margin-left: auto;
-}
-
   display: flex;
-  align-items: center;
-}
-
-.un-logo {
-  height: 3.5rem;
-  margin-right: 1rem;
-}
-
-.logo-text {
-  display: flex;
-  align-items: center;
-}
-
-.un-title {
-  font-weight: bold;
-  font-size: 1.8rem;
-  line-height: 1.2;
-  margin-right: 1rem;
-  color: black;
-}
-
-.bold-line {
-  margin: 0;
-}
-
-.divider {
-  width: 1px;
-  height: 100%;
-  background-color: black;
-  margin: 0 1rem;
-}
-
-.subtitle {
-  font-size: 1rem;
-  color: #4d4d4d;
-  font-weight: 500;
-  line-height: 1.4;
-}
-
-.search-icon {
-  cursor: pointer;
-  margin-left: auto;
+  align-items: center; /* Vertically center icon */
+  justify-content: center;
 }
