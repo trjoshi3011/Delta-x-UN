@@ -61,6 +61,8 @@
   overflow-y: hidden;
   flex-grow: 1;
   -webkit-overflow-scrolling: touch;
+  padding-bottom: 5px;          /* 👈 Adds spacing between content and scrollbar */
+  box-sizing: border-box;       /* Ensures padding doesn't overflow */
 }
 
 .scroll-wrapper::-webkit-scrollbar {

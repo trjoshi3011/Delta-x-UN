@@ -1,7 +1,7 @@
 import React from 'react';
 import './ImageBlocks.css';
 import image1 from '../assets/image1.jpg';
-import image2 from '../assets/image2.jpg';
+import image8 from '../assets/image8.jpg';
 import image4 from '../assets/image4.jpg';
 import image6 from '../assets/image6.jpg';
 import image7 from '../assets/image7.jpg';
@@ -43,10 +43,10 @@ function ImageBlocks() {
             </div>
           </a>
 
-          <a className="block news-block" href="https://www.wipo.int/web/wipo-magazine/articles/tantrum-pending-how-one-father-took-his-pacifier-from-patent-to-market-and-weaned-his-daughter-off-her-dummy-72431" target="_blank" rel="noopener noreferrer">
-            <img src={image2} alt="News 5" />
+          <a className="block news-block" href="https://www.unfpa.org/news/between-siege-and-survival-unheard-struggles-mothers-west-bank" target="_blank" rel="noopener noreferrer">
+            <img src={image8} alt="News 5" />
             <div className="news-title">
-              Reinventing the pacifier
+              Unheard struggles of West Bank mothers
             </div>
           </a>
         </div>
