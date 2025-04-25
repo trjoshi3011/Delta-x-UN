@@ -52,13 +52,13 @@
 }
 
 .subtitle {
-  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 700;
   color: #555555;
   font-size: 1.35rem;
   line-height: 1.2;
   text-transform: none;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02;
   align-self: flex-end;       /* Align to bottom of container */
 }
 
