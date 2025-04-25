@@ -11,7 +11,7 @@ function ImageBlocks() {
     <div className="image-blocks">
       <div className="block today-un">
         <h3>Today<br />at the UN</h3>
-        <div className="arrow-line">→</div>
+        <div className="arrow-line"></div>
       </div>
       <div className="scroll-wrapper">
         <div className="scroll-track">

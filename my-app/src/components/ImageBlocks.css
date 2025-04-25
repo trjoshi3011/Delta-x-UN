@@ -23,18 +23,36 @@
   font-size: 3.5rem;
   font-weight: 600;
   margin: 0;
+  padding-bottom: 0px;
   line-height: 1.1;
 }
 
+
 .arrow-line {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-top: auto;
-  border-top: 2px solid white;
-  padding-top: 10px;
+  display: flex;
+  align-items: flex-end;         /* Aligns arrow to bottom of the line */
+  justify-content: space-between;
+  margin-bottom: 30px;
   width: 100%;
-  text-align: right;
 }
+
+.arrow-line::before {
+  content: '';
+  flex-grow: 1;
+  height: 2.5px;
+  background-color: white;
+}
+
+.arrow-line::after {
+  content: '→';
+  font-size: 3.5rem;             /* reduced size to match line thickness */
+  font-weight: bold;
+  position: relative;
+  top: 26.3px;
+  left: -4px;
+  color: white;
+}
+
 
 /* Only scroll-wrapper is scrollable horizontally */
 .scroll-wrapper {
