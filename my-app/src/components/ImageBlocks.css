@@ -1,28 +1,22 @@
 .image-blocks {
   display: flex;
-  padding: 0 10mm;            /* 10mm side margins */
-  gap: 5mm;                   /* 5mm gap between all blocks */
-  align-items: stretch;       /* Equal height for all blocks */
+  padding: 0 10mm;
+  gap: 5mm;
+  align-items: stretch;
+  overflow: hidden; /* prevents page-level horizontal scroll */
 }
 
-.block {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  color: inherit;
-  font-family: sans-serif;
-}
-
+/* Fixed blue block on the left */
 .today-un {
-  width: 170px;               /* Fixed width like the image */
+  width: 170px;
   background-color: #009edb;
   color: white;
   padding: 2rem 1.5rem;
-  justify-content: space-between;
-  text-align: left;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
+  flex-shrink: 0;
 }
 
 .today-un h3 {
@@ -41,26 +35,43 @@
   width: 100%;
   text-align: right;
 }
+
+/* Only scroll-wrapper is scrollable horizontally */
+.scroll-wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-grow: 1;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Inner flex container that holds all news blocks */
+.scroll-track {
+  display: flex;
+  gap: 5mm;
+  height: 100%;
+}
+
 .news-block {
-  flex: 1;
+  flex: 0 0 calc((100% - 2 * 5mm) / 3); /* keep 3 blocks visible at once */
   min-width: 0;
+  scroll-snap-align: start;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   border-radius: 4px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .news-block img {
-  flex-grow: 1;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 2px;
   transition: transform 0.3s ease;
 }
 
 .news-block:hover img {
-  transform: scale(1.07); /* slight zoom */
+  transform: scale(1.05);
 }
 
 .news-block:hover {
