@@ -33,6 +33,7 @@
   align-items: flex-end;         /* Aligns arrow to bottom of the line */
   justify-content: space-between;
   margin-bottom: 30px;
+  margin-top: -10px;
   width: 100%;
 }
 
@@ -89,7 +90,8 @@
 }
 
 .news-block {
-  flex: 0 0 calc((100% - 2 * 5mm) / 3); /* keep 3 blocks visible at once */
+  position: relative;
+  flex: 0 0 calc((100% - 2 * 5mm) / 3);
   min-width: 0;
   scroll-snap-align: start;
   display: flex;
@@ -98,7 +100,6 @@
   border-radius: 4px;
   transition: transform 0.3s ease;
   cursor: pointer;
-  padding-bottom: 7px;
 }
 
 .news-block img {
@@ -108,6 +109,27 @@
   transition: transform 0.3s ease;
 }
 
+/* 🔥 Overlay title */
+.news-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+/* 🧼 Hide title on hover */
+.news-block:hover .news-title {
+  opacity: 0;
+}
+
 .news-block:hover img {
   transform: scale(1.05);
 }
@@ -115,4 +137,5 @@
 .news-block:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
 

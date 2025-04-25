@@ -17,20 +17,37 @@ function ImageBlocks() {
         <div className="scroll-track">
           <a className="block news-block" href="https://storyteller.iom.int/stories/what-war-couldnt-take-stories-courage-and-survival-sudans-displaced" target="_blank" rel="noopener noreferrer">
             <img src={image6} alt="News 1" />
+            <div className="news-title">
+              What the war couldn’t take
+            </div>
           </a>
+
           <a className="block news-block" href="https://www.unwomen.org/en/articles/explainer/how-gender-inequality-and-climate-change-are-interconnected" target="_blank" rel="noopener noreferrer">
             <img src={image7} alt="News 2" />
+            <div className="news-title">
+              The interconnected crisis
+            </div>
           </a>
+
           <a className="block news-block" href="https://www.wfp.org/stories/nourishing-syrias-future-how-wfp-rethinking-nutrition-generation-born-conflict" target="_blank" rel="noopener noreferrer">
             <img src={image4} alt="News 3" />
+            <div className="news-title">
+              Nourishing Syria’s future
+            </div>
           </a>
 
           <a className="block news-block" href="https://www.unesco.org/en/articles/heat-resistant-super-corals-source-hope-future-coral-reefs" target="_blank" rel="noopener noreferrer">
             <img src={image1} alt="News 4" />
+            <div className="news-title">
+              Tatakoto coral defy heat
+            </div>
           </a>
 
           <a className="block news-block" href="https://www.wipo.int/web/wipo-magazine/articles/tantrum-pending-how-one-father-took-his-pacifier-from-patent-to-market-and-weaned-his-daughter-off-her-dummy-72431" target="_blank" rel="noopener noreferrer">
             <img src={image2} alt="News 5" />
+            <div className="news-title">
+              Reinventing the pacifier
+            </div>
           </a>
         </div>
       </div>
