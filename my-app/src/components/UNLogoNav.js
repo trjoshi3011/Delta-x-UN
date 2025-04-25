@@ -19,8 +19,14 @@ function UNLogoNav() {
           </div>
         </div>
       </div>
-      <div className="search-icon">
-        <Search color="black" size={20} />
+      <div className="search-container">
+        <div className="search-wrapper">
+          <input type="text" placeholder="Search" className="search-input-box" />
+          <button className="search-icon-box">
+            <Search size={18} color="black" />
+          </button>
+        </div>
+        <div className="site-index">A-Z Site Index</div>
       </div>
     </div>
   );

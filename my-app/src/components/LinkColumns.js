@@ -1,6 +1,7 @@
 import React from 'react';
 import './LinkColumns.css';
 
+
 function LinkColumns() {
     const columns = [
       [
