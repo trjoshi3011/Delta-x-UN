@@ -44,6 +44,25 @@
   -webkit-overflow-scrolling: touch;
 }
 
+.scroll-wrapper::-webkit-scrollbar {
+  height: 7px; /* Thickness of the scrollbar */
+}
+
+.scroll-wrapper::-webkit-scrollbar-track {
+  background: rgba(220, 220, 220, 0.5); /* Light grey track */
+  border-radius: 10px;
+}
+
+.scroll-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(100, 100, 100, 0.5); /* Darker grey thumb */
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.scroll-wrapper::-webkit-scrollbar-thumb:hover {
+  background: rgba(80, 80, 80, 0.7); /* Darker on hover */
+}
+
 /* Inner flex container that holds all news blocks */
 .scroll-track {
   display: flex;
@@ -61,6 +80,7 @@
   border-radius: 4px;
   transition: transform 0.3s ease;
   cursor: pointer;
+  padding-bottom: 7px;
 }
 
 .news-block img {
