@@ -1,6 +1,6 @@
 .image-blocks {
   display: flex;
-  padding: 0 10mm;
+  padding: 0 16mm;
   gap: 5mm;
   align-items: stretch;
   overflow: hidden; /* prevents page-level horizontal scroll */

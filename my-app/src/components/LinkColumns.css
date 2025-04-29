@@ -1,7 +1,7 @@
 .link-columns {
   display: flex;
   justify-content: space-between;
-  padding: 40px 10mm;
+  padding: 40px 16mm;
   font-family: sans-serif;
 }
 

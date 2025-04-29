@@ -1,8 +1,8 @@
 .nav-tabs {
   display: flex;
   justify-content: left;
-  gap: 15px;
-  margin: 1mm 10mm;
+  gap: 14px;
+  margin: 1mm 16mm;
   padding-bottom: 20px;
 }
 

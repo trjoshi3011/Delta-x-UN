@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 4mm 10mm;
+  margin: 6mm 16mm;
   padding: 1.2rem 0;
   background-color: white;
 }
@@ -33,7 +33,6 @@
   line-height: 0.95;          /* Tighter spacing between lines */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   color: black;
   height: 100%;
   margin: 0;
@@ -52,10 +51,10 @@
 }
 
 .subtitle {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   color: #555555;
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   line-height: 1.2;
   text-transform: none;
   letter-spacing: 0.02;
