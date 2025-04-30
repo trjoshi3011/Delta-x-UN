@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 6mm 16mm;
+  margin: 3vh 5vw;
   padding: 1.2rem 0;
   background-color: white;
 }
@@ -17,7 +17,7 @@
 
 .un-logo {
   height: 5rem; /* Set this as your fixed logo height */
-  margin-right: 1.2rem;
+  margin-right: 0.7rem;
 }
 
 .logo-text {
@@ -44,10 +44,10 @@
 }
 
 .divider {
-  width: 0.5px;
-  height: 5rem; /* match enlarged logo */
+  width: 0.09vw;
+  height: 5rem;
   background-color: black;
-  margin: 0 1.2rem;
+  margin: 0 1rem;
 }
 
 .subtitle {
@@ -55,9 +55,8 @@
   font-weight: 700;
   color: #555555;
   font-size: 1.5rem;
-  line-height: 1.2;
+  line-height: 1.7rem;
   text-transform: none;
-  letter-spacing: 0.02;
   align-self: flex-end;       /* Align to bottom of container */
 }
 
@@ -87,7 +86,7 @@
   font-size: 16px;
   font-family: "Inter", sans-serif;
   border: none;
-  background-color: #f7f7f7;
+  background-color: #f2f2f2;
   outline: none;
   width: 200px;
 }

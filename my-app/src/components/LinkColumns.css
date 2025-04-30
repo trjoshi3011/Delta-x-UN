@@ -1,24 +1,24 @@
 .link-columns {
   display: flex;
   justify-content: space-between;
-  padding: 40px 16mm;
+  padding: 7vh 10vw;
   font-family: sans-serif;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 0.85rem;
   min-width: max-content; /* ensures content doesn't wrap */
 }
 
 .link-item {
-  font-size: 15px;
+  font-size: 0.9rem;
   font-weight: 600;
   color: #000;
   text-decoration: none;
-  border-bottom: 1.5px dotted #000;
-  padding-bottom: 2px;
+  border-bottom: 0.3vh dotted #000;
+  padding-bottom: 0.1vh;
   display: inline-flex;
   align-items: center;
   width: fit-content;
@@ -30,6 +30,6 @@
 
 .arrow {
   color: #009edb;
-  margin-left: 6px;
-  font-size: 16px;
+  margin-left: 0.5vw;
+  font-size: 1.2rem;
 }
