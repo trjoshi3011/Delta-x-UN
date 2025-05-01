@@ -1,0 +1,28 @@
+.unphoto-links-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+    width: 240px;  /* ✅ Same width as the blue box */
+  }
+  
+  .unphoto-link {
+    flex: 1; /* ✅ This makes both buttons split evenly */
+    background-color: #ffffff;
+    color: #4a90e2;
+    border: 2px solid #4a90e2;
+    border-radius: 8px;
+    padding: 10px 0;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .unphoto-link:hover {
+    background-color: #4a90e2;
+    color: #ffffff;
+  }
+  

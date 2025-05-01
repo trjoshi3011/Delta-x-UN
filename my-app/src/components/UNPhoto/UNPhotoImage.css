@@ -1,0 +1,17 @@
+.unphoto-image-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 80px;
+    margin-top: 32px;
+  }
+  
+  .unphoto-extra-img {
+    width: 340px;         /* ✅ matches Broadcast card width */
+    height: 280px;        /* ✅ matches UN Photo box height exactly */
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-right: 3px;   /* ✅ even spacing between image and UN Photo */
+  }
+  

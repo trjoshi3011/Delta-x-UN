@@ -1,6 +1,7 @@
 .link-columns {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 20vh;
   padding: 7vh 10vw;
   font-family: sans-serif;
 }
@@ -8,12 +9,13 @@
 .column {
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
+  justify-content: center;
+  gap: 0.55rem;
   min-width: max-content; /* ensures content doesn't wrap */
 }
 
 .link-item {
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   font-weight: 600;
   color: #000;
   text-decoration: none;
