@@ -11,6 +11,9 @@ import UNPhoto from './components/UNPhoto/UNPhoto';
 import Calendar from './components/Calendar/Calendar';
 import Broadcast from './components/Broadcast/Broadcast';
 import UNFooter from './components/Footer/footer';
+import Bar from './components/BottomBar/bottombar'
+
+
 
 import './App.css';
 
@@ -43,6 +46,7 @@ function App() {
       <footer class="footer">
       <Tabs />
       <UNFooter />
+      <Bar />
 
     </footer>
 

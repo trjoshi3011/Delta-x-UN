@@ -1,0 +1,70 @@
+.bottom-bar {
+    background-color: #2d2d2d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-family: Arial, sans-serif;
+    flex-wrap: nowrap;
+  }
+  
+  .bottom-bar-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .bottom-bar-left img.un-logo {
+    height: 48px;
+  }
+  
+  .un-text {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  
+  .bottom-bar-right {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1.1rem;
+    align-items: center;
+  }
+  
+  .social-icons i {
+    font-size: 1.2rem;
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  .social-icons i:hover {
+    color: white;
+  }
+  
+  .vertical-divider {
+    width: 1px;
+    height: 32px;
+    background-color: #666;
+    margin: 0 1rem;
+  }
+  
+  .donate-button {
+    background-color: white;
+    color: #0E9EDD;
+    border: 2px solid #0E9EDD;
+    padding: 0.5rem 1.25rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .donate-button:hover {
+    background-color: #0E9EDD;
+    color: white;
+  }
