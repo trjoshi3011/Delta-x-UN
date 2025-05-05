@@ -48,30 +48,30 @@ function UNArchiveTimeline() {
 
   return (
     <div className="archive-container">
-      <div className='timeline-title'> 
-        UN Archive Timeline
-      </div>  
+      <div className='timeline-title'>UN Archive Timeline</div>
       <div className="timeline-wrapper">
-  {timelineData.map((item, index) => (
-    <div className="timeline-item" key={index}>
-      <div
-        className={`icon-column ${index === 0 ? 'first' : ''} ${
-          index === timelineData.length - 1 ? 'last' : ''
-        }`}
-      >
-        <a href={item.url} target="_blank" rel="noopener noreferrer" className="icon-link">
-          <div className="icon">{item.icon}</div>
-        </a>
+        {timelineData.map((item, index) => (
+          <div className="timeline-item" key={index}>
+            <div
+              className={`icon-column ${index === 0 ? 'first' : ''} ${
+                index === timelineData.length - 1 ? 'last' : ''
+              }`}
+            >
+              <a href={item.url} target="_blank" rel="noopener noreferrer" className="icon-link">
+                <div className="icon-circle">
+                  <div className="icon">{item.icon}</div>
+                </div>
+              </a>
+            </div>
+            <div className="text-column">
+              <h4>{item.title}</h4>
+              <p className="subtitle">{item.subtitle}</p>
+              <p className="description">{item.description}</p>
+              <a href={item.url} target="_blank" rel="noopener noreferrer">{item.link}</a>
+            </div>
+          </div>
+        ))}
       </div>
-      <div className="text-column">
-        <h4>{item.title}</h4>
-        <p className="subtitle">{item.subtitle}</p>
-        <p className="description">{item.description}</p>
-        <a href={item.url} target="_blank" rel="noopener noreferrer">{item.link}</a>
-      </div>
-    </div>
-  ))}
-</div>
     </div>
   );
 }

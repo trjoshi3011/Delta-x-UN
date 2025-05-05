@@ -1,139 +1,145 @@
-/* Container for the entire archive section */
 .archive-container {
-  /* background-color: #f9f9f9; */
-  padding: 1.875rem; /* 30px */
-  border-radius: 0.5rem; /* 8px */
+  padding: 30px;
   font-family: Arial, sans-serif;
-  /* box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05); 0 4px 12px */
-  max-width: 46.875rem; /* 750px */
-  margin: 2.5rem 0 2.5rem 2.5rem; /* 40px */
+  max-width: 520px;
+  margin: 40px auto;
   text-align: left;
-  margin-left: 9vh;
-  transform: scale(1.05); /* optional: scales everything, including spacing */
-  transform-origin: top left; /* keeps it aligned */
-
 }
 
-/* Header */
-.archive-container h2 {
-  font-size: 1.5rem; /* 24px */
-  margin-bottom: 1.875rem; /* 30px */
-}
-
-/* Wrapper for all timeline items */
-.timeline-wrapper {
-  position: relative;
-}
-
-/* Each item in the timeline */
-.timeline-item {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 2.1875rem; /* 35px */
-  position: relative;
-}
-
-/* Column that holds the icon and line */
-.icon-column {
-  position: relative;
-  width: 3.125rem; /* 50px */
-  display: flex;
-  justify-content: center;
-}
-
-/* The actual icon */
-.icon {
-  font-size: 2rem; /* 32px */
-  color: #0072c6;
-  z-index: 1;
-  transition: transform 0.3s ease, color 0.3s ease;
-  cursor: pointer;
-}
-
-/* Special nudge for the first icon (bird) */
-.icon-column.first .icon {
-  margin-top: 0.25rem; /* 4px */
-}
-
-.icon:hover {
-  transform: scale(1.25);
-  color: #0056a3;
-}
-
-.icon-column::after {
-  content: '';
-  position: absolute;
-  top: 2.5rem; /* 40px */
-  bottom: -2.1875rem; /* -35px */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0.125rem; /* 2px */
-  background-color: #0072c6;
-  z-index: 0;
-}
-
-.icon-column.first::after {
-  top: 50%;
-}
-
-.icon-column.last::after {
-  display: none;
-}
-
-.text-column {
-  flex: 1;
-  padding-left: 0.625rem; /* 10px */
-}
-
-/* Title */
-.text-column h4 {
-  font-size: 1.1rem; /* 16px */
-  margin: 0 0 0.3125rem; /* 5px */
-  font-weight: bold;
-}
-
-/* Subtitle */
-.subtitle {
-  font-size: 0.975rem; /* 14px */
-  font-weight: bold;
-  margin: 0 0 0.25rem; /* 4px */
-  color: #333;
-}
-
-/* Description */
-.description {
-  font-size: 0.9125rem; /* 13px */
-  color: #555;
-  margin: 0 0 0.375rem; /* 6px */
-}
-
-/* Links */
-.text-column a {
-  margin-left: 2.4rem;
-  color: #0072c6;
-  font-size: 0.975rem; /* 14px */
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.text-column a:hover {
-  text-decoration: underline;
-  transform: scale(1.1);
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-
-.icon-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-}
-
-/* Timeline section title */
 .timeline-title {
   font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 5.6vh;
   margin-bottom: 3vh;
+  text-align: left;
+}
+
+.timeline-wrapper {
+  position: relative;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+/* ==== ICON COLUMN ==== */
+.icon-column {
+  position: relative;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-column::after {
+  content: '';
+  position: absolute;
+  top: 44px; /* match circle height exactly */
+  bottom: -110px;
+  width: 4px;
+  background-color: #0072c6;
+  z-index: 0;
+}
+
+
+.icon-column.last::after {
+  display: none;
+}
+
+/* Circle background */
+.icon-circle {
+  background-color: #0072c6;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.icon-circle:hover {
+  transform: scale(1.4);
+}
+
+/* Icon inside the circle */
+.icon {
+  color: white;
+  font-size: 22px;
+}
+
+/* Remove default underline on icon links */
+.icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none !important;
+  outline: none;
+  border: none;
+}
+
+/* ==== TEXT COLUMN ==== */
+.text-column {
+  flex: 1;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.text-column h4 {
+  font-size: 1.1rem;
+  margin: 0 0 5px;
+  font-weight: bold;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.subtitle {
+  font-size: 0.975rem;
+  font-weight: bold;
+  margin: 0 0 6px;
+  color: #333;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0 0 6px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+/* Link styling */
+.text-column a {
+  color: #0072c6;
+  font-size: 0.975rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.text-column a:hover {
+  text-decoration: underline;
+  transform: scale(1.2);
+}
+
+.text-column h4:hover {
+  transform: scale(1.03);
+}
+
+
+.subtitle,
+.description {
+  text-align: left;
+  align-self: center;
 }
