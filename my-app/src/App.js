@@ -12,6 +12,8 @@ import Calendar from './components/Calendar/Calendar';
 import Broadcast from './components/Broadcast/Broadcast';
 import UNFooter from './components/Footer/footer';
 import Bar from './components/BottomBar/bottombar'
+import UNPhotoImage from './components/UNPhoto/UNPhotoImage';
+
 
 
 
@@ -33,13 +35,17 @@ function App() {
       <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-start' }}>
   <UNArchiveTimeline />
   <div className="un-column-wrapper">
-    <UNPhoto />
-    <div className="row">
+    <div className="top-image-row">
+      <UNPhotoImage /> {/* ✅ image sits to the left */}
+      <UNPhoto />
+    </div>
+    <div className="cards-row">
       <Broadcast />
       <Calendar />
     </div>
   </div>
 </div>
+
 
 
 

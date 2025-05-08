@@ -17,10 +17,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding: 40px 16px;
+  padding: 2vh 4vw;  
   gap: 24px;
-  margin-left: 16vh;
-  transform: scale(1.14);
+  margin-left: -7vw; 
+  transform: scale(1);
   transform-origin: top left;
 }
 
@@ -38,4 +38,98 @@ body {
   margin: 3vh auto;
   opacity: 0.7;
 }
+.cards-container {
+  display: flex;
+  justify-content: start;      /* Aligns boxes to the left */
+  align-items: flex-start;
+  gap: 24px;                   /* Space between the boxes */
+  margin-left: 2vw;            /* Pulls everything to the left side */
+  margin-right: auto;          /* Prevents it from drifting to the right */
+  max-width: 100vw;            /* Prevents overflow */
+  flex-wrap: wrap;             /* Allows responsiveness */
+}
+/* Hard reset layout behavior */
+.App {
+  text-align: left;          /* Remove default centering */
+  margin: 0;
+  padding: 0;
+}
+
+/* This is your box row container — wrap your cards in this */
+.cards-row {
+  display: flex;
+  justify-content: flex-start; /* Hug left side */
+  gap: 24px;                   /* Spacing between boxes */
+  padding-left: 2vw;           /* Push everything away from screen edge */
+  padding-right: 0;            /* Let right side breathe */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Force all boxes to not add extra space */
+.broadcast-box,
+.calendar-box,
+.unphoto-container {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.slider-container {
+  flex: 2vh; /* allow it to grow */
+  height: auto;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0; /* minimum size */
+  max-width: 100vw; /* optional: prevent it from being too huge */
+}
+
+
+.slider-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.slider-button {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  background-color: #ffffff;
+  border: 2px solid #4a90e2;
+  color: #4a90e2;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.slider-button:hover {
+  background-color: #4a90e2;
+  color: white;
+}
+.top-image-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2vw;
+  width: 100%;
+}
+.top-image-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* center vertically */
+  gap: 2vw;
+  width: 105%;
+  min-height: 35vh; /* optional: gives room for vertical centering */
+}
+
+
+
+
 
