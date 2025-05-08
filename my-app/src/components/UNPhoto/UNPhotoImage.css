@@ -1,17 +1,41 @@
-.unphoto-image-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-left: 80px;
-    margin-top: 32px;
-  }
-  
-  .unphoto-extra-img {
-    width: 340px;         /* ✅ matches Broadcast card width */
-    height: 280px;        /* ✅ matches UN Photo box height exactly */
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-right: 3px;   /* ✅ even spacing between image and UN Photo */
-  }
+.slider-container {
+  width: 20vh;             /* Takes up 30% of viewport width */
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  padding: 0;
+}
+
+.slider-image {
+  width: 100%;  /* stretches to fill the container */
+  height: auto;
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+
+.slider-button {
+  position: absolute;
+  bottom: 1vh;
+  right: 1vh;
+  background-color: #ffffff;
+  border: 0.2vh solid #4a90e2;
+  color: #4a90e2;
+  font-size: 2vh;
+  font-weight: bold;
+  padding: 0.5vh 1.5vh;
+  border-radius: 0.5vh;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.slider-button:hover {
+  background-color: #4a90e2;
+  color: white;
+}
+
+
   
