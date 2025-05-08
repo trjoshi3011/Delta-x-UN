@@ -5,131 +5,135 @@ body {
   background-color: #ffffff;
 }
 
-
 .footer {
   margin-top: 8vh;
-  background-color: #f9f9f9; /* or any color you want */
+  background-color: #f9f9f9;
   border-top: 1px solid #ddd;
 }
-
 
 .un-column-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  padding: 2vh 4vw;  
+  align-items: center;       
+  padding: 2vh 4vw;
   gap: 24px;
-  margin-left: -7vw; 
   transform: scale(1);
-  transform-origin: top left;
+  transform-origin: top center; 
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-  justify-content: flex-end;
-}
 
 .section-divider {
   border: none;
-  border-top: .25vh dashed #c2bfbf;
+  border-top: 0.25vh dashed #c2bfbf;
   width: 85%;
   margin: 3vh auto;
   opacity: 0.7;
 }
-.cards-container {
+
+
+.top-image-row {
   display: flex;
-  justify-content: start;      /* Aligns boxes to the left */
-  align-items: flex-start;
-  gap: 24px;                   /* Space between the boxes */
-  margin-left: 2vw;            /* Pulls everything to the left side */
-  margin-right: auto;          /* Prevents it from drifting to the right */
-  max-width: 100vw;            /* Prevents overflow */
-  flex-wrap: wrap;             /* Allows responsiveness */
-}
-/* Hard reset layout behavior */
-.App {
-  text-align: left;          /* Remove default centering */
-  margin: 0;
-  padding: 0;
+  flex-direction: row;
+  justify-content: center;     
+  align-items: center;         
+  gap: 1.25vw;
+  width: 100%;
+  min-height: 39vh;           
+  box-sizing: border-box;
 }
 
-/* This is your box row container — wrap your cards in this */
 .cards-row {
   display: flex;
-  justify-content: flex-start; /* Hug left side */
-  gap: 24px;                   /* Spacing between boxes */
-  padding-left: 2vw;           /* Push everything away from screen edge */
-  padding-right: 0;            /* Let right side breathe */
+  justify-content: center;     
+  gap: 24px;
+  padding-left: 2vw;
+  padding-right: 2vw;
   width: 100%;
   box-sizing: border-box;
 }
 
-/* Force all boxes to not add extra space */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+
 .broadcast-box,
 .calendar-box,
 .unphoto-container {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
+  margin: 0 !important;
 }
+
+
 .slider-container {
-  flex: 2vh; /* allow it to grow */
-  height: auto;
-  background-color: #f2f2f2;
+  width: 29vh;
+  height: 41vh;
+  background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 0; /* minimum size */
-  max-width: 100vw; /* optional: prevent it from being too huge */
+  box-sizing: border-box;
+  flex: 0 0 29vh;
 }
 
+.slider-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
 
 .slider-image {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
 }
+
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.2vh;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.3vh 1vh;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  border-radius: 4px;
+}
+
+.slider-container:hover .arrow {
+  opacity: 1;
+}
+
+.arrow-left {
+  left: 1.5vh;
+}
+
+.arrow-right {
+  right: 1.5vh;
+}
+
 
 .slider-button {
-  position: absolute;
-  right: 8px;
-  bottom: 8px;
-  background-color: #ffffff;
-  border: 2px solid #4a90e2;
-  color: #4a90e2;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 4px 10px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.2s ease;
+  display: none;
 }
 
-.slider-button:hover {
-  background-color: #4a90e2;
-  color: white;
+.App {
+  text-align: left;
+  margin: 0;
+  padding: 0;
 }
-.top-image-row {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 2vw;
-  width: 100%;
-}
-.top-image-row {
-  display: flex;
-  flex-direction: row;
-  align-items: center; /* center vertically */
-  gap: 2vw;
-  width: 105%;
-  min-height: 35vh; /* optional: gives room for vertical centering */
-}
-
-
-
-
-
