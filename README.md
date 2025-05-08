@@ -1,4 +1,5 @@
 ## 🌟 Introduction
+This project focused on redesigning the UN website, specifically the Events and News Page. From earlier in this project, we figured out that users, specifically younger users, thought the website was not visually appealing, information was cluttered, and lacked visuals. We created a Figma mockup that addressed these issues through timelines, scrollable components, and tabs. Based on the mockup, we created a React-based webpage that prototypes the Events and News Page, ensuring the page is interactive, contains all needed information, and preserves the UN style theme.
 
 ## 👥 The Team and Roles
 
@@ -92,12 +93,14 @@ We used JavaScript to create buttons that lead users to external sites if they c
 We used JavaScript to create components so that each group of information is separated and clear:
 - Each component has links to external sites so the user can view more information if they choose to.
 
-
-
-  
-
-
 ## 🚧 Challenges
 
-## 📈 Next Steps/Scalability
+The biggest challenge we faced was how to represent all the information that the UN Events and News Page but make it less overwhelming and modern. We did so through creating a variety of mechanisms that revealed more information only if the user chose to find that information. For example, if the user wants to read news, they can scroll to find more news; all the news stories don't have to appear on one page. If a user wants to find key documents, the user can hover over the Key Documents button to see links to key documents. To make the website more modern, we focused on changing states from user actions. For example, if a user hovered over a tab, the tab tile changed color. 
+
+## 📈 Next Steps
+
+Our next steps would consist of two main things. The first is to create React prototypes of the other webpages, such as the Spotlight and Global Issues Pages. Next, we would make our Events and News prototype more production-ready. We would do this by implementing an accurate navigation bar, ensuring the website renders properly for all desktop sizes, and making it possible for information on the website to change more easily. Ex: new news stories or new pictures.
+
+
+
                   
