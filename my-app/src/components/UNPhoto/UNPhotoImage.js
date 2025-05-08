@@ -12,19 +12,23 @@ const images = [img1, img2, img3, img4, img5];
 function UNPhotoImage() {
   const [index, setIndex] = useState(0);
 
+  const handlePrev = () => {
+    setIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+  };
+
   const handleNext = () => {
     setIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
   return (
     <div className="slider-container">
-      <img src={images[index]} alt={`Slide ${index + 1}`} className="slider-image" />
-      <button className="slider-button" onClick={handleNext}>
-        &gt;
-      </button>
+      <div className="slider-inner">
+        <img src={images[index]} alt={`Slide ${index + 1}`} className="slider-image" />
+        <div className="arrow arrow-left" onClick={handlePrev}>&lt;</div>
+        <div className="arrow arrow-right" onClick={handleNext}>&gt;</div>
+      </div>
     </div>
   );
 }
 
 export default UNPhotoImage;
-
