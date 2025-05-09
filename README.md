@@ -31,7 +31,7 @@ Make sure you have the following installed:
 Clone the Repository:
 
 ```bash
-git clone https://github.com/xiaoxialexazhang/sp25UN.git
+git clone https://github.com/trjoshi3011/Delta-x-UN.git
 cd sp25UN
 ```
 
