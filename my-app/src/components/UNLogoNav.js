@@ -14,7 +14,7 @@ function UNLogoNav() {
             <div className="bold-line">Nations</div>
           </div>
           <div className="divider" />
-          <div className="subtitle">
+          <div className="header-subtitle">
             Peace, dignity and equality <br /> on a healthy planet
           </div>
         </div>

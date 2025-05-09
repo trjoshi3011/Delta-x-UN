@@ -50,14 +50,14 @@
   margin: 0 1rem;
 }
 
-.subtitle {
+.header-subtitle {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  color: #555555;
+  color: #000000;
   font-size: 1.5rem;
   line-height: 1.7rem;
   text-transform: none;
-  align-self: flex-end;       /* Align to bottom of container */
+  align-self: center;       /* Align to bottom of container */
 }
 
 .search-container {
